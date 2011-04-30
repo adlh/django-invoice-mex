@@ -1,0 +1,4 @@
+Models and Views giving an idea how an invoice-module could work to generate a PDF after the sale has been completed.
+
+This module is specifically designed for generating a CBB-Factura according to the mexican requirements.
+
