@@ -48,6 +48,7 @@ class Datos(CommonSucursal):
     colonia = models.CharField(help_text=_(u'colonia (y municipio)'), max_length=100)
     codigo_postal = models.PositiveIntegerField()
     ciudad = models.CharField(max_length=100)
+    estado = models.CharField(max_length=100)
     rfc = models.CharField('RFC', max_length=20)
     folio = models.ForeignKey(Folio, help_text=_(u'Folio para usar en la facturación.'))
     email = models.EmailField(_('e-mail address'), blank=True, null=True)
