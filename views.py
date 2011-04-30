@@ -11,7 +11,7 @@ def print_factura(request, venta_code, mode):
     else:
         # create an invoice
         fol = datos.folio
-        if fol.next_folio == -1:
+        if fol.next_folio == None:
             return render_to_response('sucursal/generic_message.html', {'msg': 'No se puede generar la factura porque ya no hay folios disponibles en el rango actual.'}, context_instance=RequestContext(request))
         fol.folio_actual = fol.next_folio
         fol.save()
